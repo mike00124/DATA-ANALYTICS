@@ -1,0 +1,35 @@
+To tackle this assignment, here’s a structured approach you can follow:
+
+1. Environment Setup
+a)Make sure you have Python installed along with necessary libraries:
+
+Copy code
+pip install requests beautifulsoup4 lxml
+2. Understanding the Requirements
+a)Input: Either a college name or a URL of the course page.
+b)Output: A clean, structured list or dictionary of courses.
+Tools: You can use requests to fetch web pages and BeautifulSoup to parse HTML content.
+3. Initial Research
+Identify a few Delhi University college websites to understand their structure. Check how the courses are listed (HTML tags, structure).
+Example colleges could include:
+St. Stephen’s College
+Hindu College
+Miranda House
+4. Script Design
+Input Handling:
+If a college name is provided, map it to its URL.
+If a URL is provided, directly proceed to scraping.
+Scraping Logic:
+Fetch the webpage content using requests.
+Parse the HTML using BeautifulSoup.
+Extract course names using appropriate tags (e.g., h2, li, div with specific class names).
+Error Handling:
+Handle scenarios where the college name doesn’t exist.
+Manage network errors (e.g., timeout).
+Handle cases where the course page is not structured well.
+Output Formatting:
+Store the extracted courses in a list or dictionary.
+5. Edge Cases
+a)Unavailable pages (404 errors).
+b)Incorrect URLs or college names.
+c)Courses listed across multiple pages.
